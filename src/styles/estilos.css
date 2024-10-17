@@ -1,0 +1,134 @@
+
+.container{
+  display: flex;  
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 4rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-style: none;
+}
+
+header {
+  position: absolute;
+  height: 70px;
+  display: flex;
+  width: 100%;
+}
+
+.header {
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+.logo {
+  width: 155px;
+}
+/*estilo de los item del naavbar en el header*/
+.iactivo {
+  color: var(--verde);
+  font-weight: 400;
+}
+.noactivo {
+  color: white;
+}
+
+/****************FOOTER********************/
+
+
+footer {
+  display: flex;
+}
+
+.footer{
+  flex-direction: column;
+}
+
+.iconos {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1.5rem 4rem;
+  border-bottom: 1px solid white;
+}
+.redes {
+  display: flex;
+  gap: 3rem;
+}
+.Terminos {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+  padding: 1.5rem 0;
+}
+
+.red-so{
+  width: 45px;
+}
+
+/*****************BOTON******************/
+
+.boton-general{
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn {
+  background-color: transparent; 
+  color: white; 
+  padding: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/*********************SUSCRIPCION***********************/
+
+.container-bannerSub{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.bannerSub{
+  background-color: var(--rosa);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 65vw;
+  height: 200px;
+}
+
+.container-bannerSub h1 {
+  font-size: 40px;
+}
+
+.container-bannerSub p{
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.boton-bs{
+  font-size: 20px;
+}

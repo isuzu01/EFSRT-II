@@ -1,0 +1,207 @@
+.pag-inicio{
+padding-bottom: 50px;
+
+}
+
+.banner-ini{
+  background-image: url('../img/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  inset: 0;
+}
+
+.banner-ini-content{
+  background-color: rgba(0, 0, 0, 0.329);
+  height: 100VH;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-ini-content h1 {
+  font-size: 100px;
+  text-align: center;
+}
+
+.banner-ini-content p{
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.banner-ini-content button{
+  letter-spacing: 3px;
+  margin-top: 50px;
+}
+
+.arrowDown{
+  margin: 50px;
+  color: white;
+  text-align: center;
+}
+.arrowDown a{
+  color: white;
+
+}
+.arrowDown a:hover{
+  font-weight: 500;
+}
+
+
+/***********MASONRY***************/
+
+.container-categ h1{
+  text-align: center;
+  color: var(--rosa);
+  font-size: 4rem;
+  margin: 40px auto;
+}
+
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: auto; 
+  gap: 15px; 
+  width: 70vw;
+  max-width: 1200px;
+  margin: 30px auto;
+  height: 80vh;
+}
+
+.categoria {
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; 
+  text-align: center;
+  
+}
+
+.categoria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: transform 0.3s ease; 
+  display: block;
+}
+
+.categoria p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.7); 
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+  pointer-events: none; 
+  transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.categoria:hover p {
+  color: #fff; 
+  transform: translate(-50%, -50%) scale(1.1); 
+  font-size: 30PX;
+}
+
+.categoria:hover img {
+
+  transform: scale(1.05); 
+}
+
+/* Distribución específica de las categorías */
+.categoria.meditacion {
+  grid-column: 1 / 2; 
+  grid-row: 1 / 3;    
+ 
+}
+.categoria.cardio {
+  grid-column: 2 / 3; 
+  grid-row: 1 / 2;    
+}
+
+.categoria.fuerza {
+  grid-column: 3 / 4; 
+  grid-row: 1 / 2;    
+}
+
+.categoria.baile {
+  grid-column: 2 / 4; 
+  grid-row: 2 / 3;
+}
+
+.categoria.yoga {
+  grid-column: 1 / 2; 
+  grid-row: 3 / 4;   
+}
+
+.categoria.pilates {
+  grid-column: 2 / 4; 
+  grid-row: 3 / 4; 
+}
+
+/* Responsividad */
+@media (max-width: 1200px) {
+  .categorias {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .categoria.baile, .categoria.pilates {
+    grid-column: 1 / 3; 
+  }
+}
+
+@media (max-width: 768px) {
+  .categorias {
+    grid-template-columns: 1fr; 
+  }
+
+  .categoria {
+    grid-column: auto; 
+  }
+}
+
+/******************INSTRUCTORES****************/
+.container-inst{
+  padding-top: 70px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.container-inst h1{
+  color: var(--verde);
+  font-size: 4rem;
+  margin: 40px auto;
+}
+.instructores{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+}
+.instructor{
+  width: fit-content;
+  text-align: center;
+}
+.instructor img{
+  border-radius: 100%;
+  width: 200px;
+  object-fit: cover; 
+  transition: transform 0.3s ease; 
+}
+.instructor p{
+  color: white;
+  font-size: 35px;
+  font-weight: 400;
+  padding: 25px ;
+}
+
+.instructor:hover :hover img {
+
+  transform: scale(1.05); 
+}

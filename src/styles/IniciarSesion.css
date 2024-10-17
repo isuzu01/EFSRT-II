@@ -1,0 +1,146 @@
+.modal {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);  
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);  
+    border: 1px solid var(--rosa);
+    padding: 50px 30px;
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    height: auto;
+    width: 500px;  
+    position: relative; 
+}
+
+.modal-content h2{
+  text-align: center;
+  padding: 10px;
+}
+
+.modal-content .img-log{
+    display: flex;
+    justify-content: center;  
+}
+.modal-content .img-log img{
+  object-fit: cover; 
+  width: 178px;
+  height: 178px;
+}
+.modal-content p{
+    font-size: 10px;
+}
+.modal-content button{
+    padding: 10px;
+    background-color: var(--rosa);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+}
+.boton{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.modal-content input{
+    border: 1px solid var(--verde);
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 8px;
+    color: white;
+}
+.modal-content .terminos{
+    display: flex;
+    justify-content: center;
+
+}
+.modal-content .tienes-cuenta{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+form .terms-info{
+    display: flex;
+    justify-content: center;
+}
+
+.group-terminos {
+    /*el check de terminos*/
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .terminos {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .terminos input[type="checkbox"] {
+    
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 2px;
+    height: 2px;
+    border: 2px solid var(--rosa);
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .terminos input[type="checkbox"]:checked {
+    background-color: var(--rosa);
+    border-color: var(--rosa);
+  }
+  
+  .terminos input[type="checkbox"]:checked::after {
+    content: '✔'; 
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: -3px;
+    left: 2px;
+  }
+  
+
+
+.terminos-info{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    text-align: center;
+
+}
+.group{
+    display: flex;
+    flex-direction: column;
+}
+
+.close {
+    cursor: pointer;  
+    position: absolute;  
+    top: 10px;  
+    right: 10px;  
+    font-size: 20px;  
+}
+
+.group-terminos{
+    display: flex;
+    flex-direction: column;
+}

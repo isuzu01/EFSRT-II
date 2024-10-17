@@ -1,0 +1,75 @@
+
+.container-card{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  
+}
+.content-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 70%;
+  gap: 50px;
+  margin: auto;
+  padding: 200px;
+}
+.card{
+  border: 2px solid var(--verde);
+  border-radius: 25px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 15px;
+}
+.card h1{
+  color: var(--rosa);
+  font-size: 35px;
+  line-break: auto;
+  text-align: center;
+  width: 200px;
+}
+.card ul{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 40px;
+}
+
+.cont-card-btn{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.cont-card-btn p{
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: var(--verde);
+}
+.card-btn{
+  background-color: var(--rosa);
+  color: black;
+  font-weight: 500;
+}
+/******************************/
+.anual{
+  border: solid var(--rosa);
+}
+
+.anual h1{
+  color: var(--verde);
+}
+
+.anual .cont-card-btn p{
+  color: var(--rosa);
+}
+
+.anual .card-btn{
+  background-color: var(--verde);
+}

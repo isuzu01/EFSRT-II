@@ -1,0 +1,68 @@
+.c-container{
+    margin: 0 auto;
+    padding: 110px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.c-container h1{
+    text-align: center;
+    color: var(--rosa);
+}
+.c-container p{
+    text-align: center;
+    margin-bottom: 80px;
+
+}
+.contacto{
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  padding-top: 30px;
+}
+.c-container-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+.group{
+    margin-bottom: 12%;
+    width: 100%;
+}
+.c-container label{
+    margin-bottom: 5px; 
+}
+.c-container input{
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid var(--verde);
+    background-color: #555;
+    border-radius: 5px;
+ }
+.c-container-content textarea{
+    width: 100%;
+    padding: 70px 0;
+    border: 1px solid var(--verde);
+    background-color: #555;
+    border-radius: 5px;
+
+}
+
+input:focus, textarea:focus {
+    border-color: var(--rosa); 
+    outline: none; 
+    background-color: rgb(145, 145, 145); 
+  }
+
+input:valid, textarea:valid {
+    background-color: white; 
+  }
+
+ .c-container-content button{
+    background-color: var(--rosa);
+    color: white;
+    padding: 10px 0px;
+    border: none;
+ }
