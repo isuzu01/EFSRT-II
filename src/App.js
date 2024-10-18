@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import { useState } from 'react';
 
 import './App.css';
@@ -11,7 +11,7 @@ import Contacto from './pages/Contacto';
 import Footer from './components/Footer';
 import IniciarSesion from './components/IniciarSesion';
 import Suscripcion from './pages/Suscripcion';
-
+import Instructores from './pages/Instructores';
 function App() { const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -23,7 +23,7 @@ function App() { const [isModalOpen, setIsModalOpen] = useState(false);
       console.log(); 
       setIsModalOpen(false);
   };
-
+ 
   return (
     <div className="App">
       <Header openModal={openModal}/>
@@ -33,6 +33,7 @@ function App() { const [isModalOpen, setIsModalOpen] = useState(false);
         <Route path='/suplementos' element={<Suplementos/>}/>
         <Route path='/contacto' element={<Contacto/>}/>
         <Route path='/suscripcion' element={<Suscripcion/>}/>
+        <Route path='/instructores' element={<Instructores />}/>        
       </Routes>
       <Footer/>
       <IniciarSesion isOpen={isModalOpen} onClose={closeModal}/> 

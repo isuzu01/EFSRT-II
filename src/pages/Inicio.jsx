@@ -64,7 +64,7 @@ const Inicio =() =>{
                     uniqueInstructors.add(ejercicio.instructor);
                     instructorElements.push(
                       <div key={ejercicio.instructor} className="instructor">
-                        <Link to={`/rutinas`}>
+                        <Link to={`/instructores`}>
                           <img src={ejercicio.imagen_instructor} alt={ejercicio.instructor} />
                           <p>{ejercicio.instructor}</p>
                         </Link>

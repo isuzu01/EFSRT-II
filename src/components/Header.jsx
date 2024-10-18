@@ -38,6 +38,12 @@ const Header = ({openModal}) =>{
               onClick={() => handleClick('inicio')}
             />
             <NavBarItem
+              url='/instructores'
+              titulo ='instructores'
+              className={`${isActive === 'instructores' ? 'iactivo' : 'noactivo'}`}
+              onClick={() => handleClick('instructores')}
+            />
+            <NavBarItem
               url='/rutinas'
               titulo ='Rutinas'
               className={`${isActive === 'rutina' ? 'iactivo' : 'noactivo'}`}

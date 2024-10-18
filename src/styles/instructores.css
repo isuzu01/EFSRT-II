@@ -1,0 +1,124 @@
+.contenedor-Inst{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    
+}
+.Instructor-context h1{
+    padding: 110px;
+    color: var(--rosa);
+    display: flex;
+    justify-content: center;
+}
+.Instructor-context p{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.Instructor-context .sub{
+    color: var(--verde);
+    padding: 0 5px;
+    display: flex;
+    justify-content: none;
+
+}
+.instructor-details-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 100px;
+    background-size: cover;
+    inset: 0;
+    position: relative;
+    padding-bottom: 50px;
+}
+.back-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    inset: 0;
+    filter: blur(1px);
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.contexto{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-top: 40px;
+}
+.contexto-texto{
+    width: 30%;
+    color: black;
+}
+.contexto button{
+    border: none;
+    padding: 20px 50px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+
+}
+.contexto h2{
+    font-size: 100px;
+}
+.contexto p{
+    font-size: 30px;
+}
+.instructor-item-1{
+    padding-top: 100px;
+    filter: grayscale(100%); 
+    transition: filter 0.2s ease; 
+}
+.instructor-item-2{
+    filter: grayscale(100%); 
+    transition: filter 0.2s ease; 
+}
+.instructor-item-3{
+    padding-top: 100px;
+    filter: grayscale(100%); 
+    transition: filter 0.2s ease; 
+}
+.instructor-item-4{
+    filter: grayscale(100%); 
+    transition: filter 0.2s ease; 
+    cursor: pointer;
+
+}
+.instructor-item-selected .instructor-img {
+    filter: grayscale(0%); /* Mantener a color cuando está seleccionada */
+}
+
+.instructor-item-1:hover {
+    filter: grayscale(0%);
+}
+.instructor-item-2:hover {
+    filter: grayscale(0%);
+}
+.instructor-item-3:hover {
+    filter: grayscale(0%);
+}
+.instructor-item-4:hover {
+    filter: grayscale(0%);
+}
+.instructor-details h2{
+    color: var(--rosa);
+}
+.video h4{
+    color: var(--verde);
+    padding-top: 180px;
+    padding-bottom: 20px;
+}
+.video-todo{
+    width: fit-content;
+}
+.video-todo video{
+    width: 300px;
+}
+.solovideo{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}

@@ -1,0 +1,110 @@
+
+.cont-filtros{
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+a{
+  color: white;
+}
+.buscador{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 4rem;
+}
+.cont-filtros h1{
+  color: var(--rosa);
+}
+
+.buscador input{
+  width: 500px;
+  height: 50px;
+  padding: 0 20px 0 50px;
+  background-color: rgba(255, 255, 255, 0.213);
+  border: none;
+  border-radius: 50px;
+  position: relative;
+  color: white;
+}
+
+.lupa{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filtros{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 4rem 0;
+}
+.filtros select{
+  width: 300px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.145);
+  color: white;
+  padding: 0 20px;
+  border: 1px solid #ccc;
+  border-Radius: 4px;
+  font-Size: 16px;
+}
+.filtros select option{
+  background: gray;
+}
+
+.filtros select option:hover{
+  background-color: red;
+}
+
+
+.videos-list{
+  display: flex;
+  justify-content: center;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 90vw;
+}
+
+.video-item {
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.video-item video{
+  width: 500px;
+}
+.video-item img{
+  width: 500px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px;
+}
+
+.pagination button.active {
+  background-color: var(--verde);
+  color: white;
+}
+
+.video-item img{
+  width: 500px;
+}
+

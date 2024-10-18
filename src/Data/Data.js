@@ -11,7 +11,9 @@ const data = {
           "nombre": "Burpees",
           "instructor": "María Rossich",
           "imagen_instructor": require("../img/maria-rossich-ini.png"),
-          "video": "url_a_video_burpees.mp4"
+          "nivel":"Basico",
+          "imagen_ejercicio": "maria.png",
+          "video": "https://media.istockphoto.com/id/1941709866/es/v%C3%ADdeo/madre-y-su-peque%C3%B1a-hija-practicando-yoga-en-el-sal%C3%B3n-de-su-casa.mp4?s=mp4-640x640-is&k=20&c=adjwKUXHjnpDUuCOJ_N3S9k8Ps2xlLw45SoAOwGiucQ="
         }
       ]
     },
@@ -25,7 +27,9 @@ const data = {
           "nombre": "Peso muerto",
           "instructor": "Sergio Peinado",
           "imagen_instructor": require("../img/sergio-peinado-ini.png"),
-          "video": "url_a_video_peso_muerto.mp4"
+          "nivel":"Intermedio",
+          "imagen_ejercicio": "maria.png",
+          "video": "https://cdn.pixabay.com/video/2022/12/18/143431-782373969_large.mp4"
         }
       ]
     },
@@ -39,6 +43,8 @@ const data = {
           "nombre": "Burpees",
           "instructor": "María Rossich",
           "imagen_instructor": require("../img/maria-rossich-ini.png"),
+          "nivel":"Avanzado",
+          "imagen_ejercicio": require("../img/maria-banner.png"),
           "video": "url_a_video_burpees.mp4"
         }
       ]
@@ -53,6 +59,8 @@ const data = {
           "nombre": "Peso muerto",
           "instructor": "Sergio Peinado",
           "imagen_instructor": require("../img/sergio-peinado-ini.png"),
+          "nivel":"Basico",
+          "imagen_ejercicio": "https://www.youtube.com/watch?v=uVG4JOlxTN8",
           "video": "url_a_video_peso_muerto.mp4"
         }
       ]
@@ -65,8 +73,10 @@ const data = {
       "nombre_ejercicios": [
         {
           "nombre": "Burpees",
-          "instructor": "MAgali Dalix Rossich",
+          "instructor": "Magali Dalix",
           "imagen_instructor": require("../img/magali-dalix-ini.png"),
+          "nivel":"Basico",
+          "imagen_ejercicio": "maria.png",
           "video": "url_a_video_burpees.mp4"
         }
       ]
@@ -81,7 +91,9 @@ const data = {
           "nombre": "Peso muerto",
           "instructor": "Miguel Peinado",
           "imagen_instructor": require("../img/miguel-peinado-ini.png"),
-          "video": "url_a_video_peso_muerto.mp4"
+          "nivel":"Intermedio",
+          "imagen_ejercicio": "maria.png",
+          "video": "uVG4JOlxTN8"
         }
       ]
     }
