@@ -1,0 +1,66 @@
+.contenedor-sup-det{
+  
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  align-items: center;
+}
+
+.main-container {
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.main-content {
+    display: flex;
+    padding: 20px;
+    border: 2px solid var(--rosa);
+
+}
+
+.main-content img {
+    width: 400px; 
+    margin-right: 20px; 
+}
+
+.main-content div {
+    flex: 1; 
+}
+
+.main-content p {
+    margin: 8px 0; 
+    line-height: 1.5; 
+}
+
+.main-content h3 {
+    margin: 10px 0;
+    font-size: 1.5em; 
+    color: white; 
+}
+
+.quantity-section {
+    margin-top: 20px;
+}
+
+.quantity-section input {
+    width: 60px; 
+    padding: 5px; 
+    margin-right: 10px; 
+
+}
+
+.quantity-section button {
+    padding: 10px 15px; 
+    background-color: var(--rosa);
+    color: #fff; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.quantity-section p {
+    font-weight: bold; 
+    margin-top: 10px; 
+}

@@ -6,8 +6,10 @@
 @import './styles/IniciarSesion.css';
 @import './styles//suscripcion.css';
 @import './styles/rutinas.css';
-@import './styles/instructores.css'
-
+@import './styles/instructores.css';
+@import './styles/videoDetalle.css';
+@import './styles/suplementos.css'; 
+@import './styles//SuplementoDetalle.css';
 
 
 

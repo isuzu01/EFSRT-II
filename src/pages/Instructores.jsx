@@ -10,18 +10,24 @@ import maria from  "../img/maria.png";
 import sergio from  "../img/sergio.png";
 import magaly from  "../img/magali.png";
 import miguel from  "../img/miguel.png";
+import { Link } from "react-router-dom";
 
 const persona = [
   { id: 1, nombre: "María Rossich", info: "Soy Licenciada en Ciencias de la Actividad física y Deporte, tengo por misión personal ayudar al mayor número de mujeres para lograr su objetivo físico y bienestar.", image: maria, fondo: bannerMaria},
   { id: 2, nombre: "Sergio Peinado", info: "Soy creador de contenido enfocado en deporte y busco inspirar/motivar a otros a alcanzar un estilo de vida saludable, y el desarrollo personal.", image: sergio, fondo: bannerSergio},
-  { id: 3, nombre: "Magaly Dalix", info: "Soy Fundadora de La Sala Magali en Barcelona, he desarrollado un método innovador que combina entrenamiento físico y mental", image: magaly, fondo: bannerMagaly},
+  { id: 3, nombre: "Magali Dalix", info: "Soy Fundadora de La Sala Magali en Barcelona, he desarrollado un método innovador que combina entrenamiento físico y mental  para mejorar no solo el estado físico", image: magaly, fondo: bannerMagaly},
   { id: 4, nombre: "Miguel Peinado", info: "Soy emprendedor en el ámbito del fitness y la salud, doy consejos sobre entrenamiento, nutrición y estilo de vida. También busco motivar a mi audiencia a llevar una vida más activa y saludable.", image: miguel, fondo: bannerMiguel},
 ];
 
 const Instructores = () => {
   const [selectedInstructor, setSelectedInstructor] = useState(null);  
   const [filteredVideos, setFilteredVideos] = useState([]); 
+  const[Active, setIsActive] = useState('')
   
+  const handleClick = (namae) => {
+    setIsActive(namae)
+  }
+
   const allVideos = data.categorias.flatMap((categoria) => 
     categoria.nombre_ejercicios.map((ejercicio) => ({
       ...ejercicio,
@@ -41,11 +47,8 @@ const Instructores = () => {
   }, [selectedInstructor]);
 
   const currentVideos = filteredVideos;
-  const instructores = [...new Set(allVideos.map((vid) => vid.instructor))];
   
-  const handleVerVideos = () => {
-    alert(`Mostrando videos de ${selectedInstructor.nombre}`);
-  };
+  
 
   return (
     <main>
@@ -60,7 +63,8 @@ const Instructores = () => {
       <div className="contenedor-Inst">
         <div className="instructores">
           {persona.map((instructor) => (
-            <div key={instructor.id} className={`instructor-item-${instructor.id}`}>
+            <div key={instructor.id} className={`instructor-item-${instructor.id} ${Active === `imgcolor${instructor.id}` ? 'iscolor' : 'nocolor'}`}              
+            onClick={() => handleClick(`imgcolor${instructor.id}`)} >
               <a href={"#instructor"+(persona.id)}>
                 <img
                   src={instructor.image}
@@ -83,7 +87,9 @@ const Instructores = () => {
                   <p>{selectedInstructor.info}</p>
                 </div>
                 <div>
-                  <button onClick={handleVerVideos}>Ver Videos</button>
+                  <Link to={'/rutinas'}>                    
+                    <button >Ver Videos</button>
+                  </Link>
                 </div>
               </div>
               <div className="video">

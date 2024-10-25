@@ -19,9 +19,11 @@ const Inicio =() =>{
             </h1>
             <p>Tu casa es el nuevo Gym</p>
             <div>
-              <Button
+              <Link to={'/suscripcion'}>
+                <Button
                 titulo={'EMPIEZA AHORA'}
               />
+              </Link>              
             </div>
             <div className="arrowDown">
               <a href="#categorias">

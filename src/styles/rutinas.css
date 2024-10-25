@@ -85,9 +85,7 @@ a{
 .video-item video{
   width: 500px;
 }
-.video-item img{
-  width: 500px;
-}
+
 .pagination {
   display: flex;
   justify-content: center;

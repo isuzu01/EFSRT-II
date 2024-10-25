@@ -12,6 +12,8 @@ import Footer from './components/Footer';
 import IniciarSesion from './components/IniciarSesion';
 import Suscripcion from './pages/Suscripcion';
 import Instructores from './pages/Instructores';
+import VideoDetalle from './components/VideoDetalle';
+import SuplementoDetalle from './components/SuplementoDetalle';
 function App() { const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -32,8 +34,10 @@ function App() { const [isModalOpen, setIsModalOpen] = useState(false);
         <Route path='/rutinas' element={<Rutinas/>}/>
         <Route path='/suplementos' element={<Suplementos/>}/>
         <Route path='/contacto' element={<Contacto/>}/>
-        <Route path='/suscripcion' element={<Suscripcion/>}/>
-        <Route path='/instructores' element={<Instructores />}/>        
+        <Route path='/suscripcion'  element={<Suscripcion /> }/>
+        <Route path='/instructores' element={<Instructores />}/>          
+        <Route path='/rutinas/:categoriaId/:videoId' element={<VideoDetalle />}/> 
+        <Route path='/suplementos/:suplementoId' element={<SuplementoDetalle/>} />         
       </Routes>
       <Footer/>
       <IniciarSesion isOpen={isModalOpen} onClose={closeModal}/> 

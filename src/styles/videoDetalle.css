@@ -1,0 +1,36 @@
+.contenedor-video{
+  padding: 0 60px;
+  width: 70vw;
+  font-size: 20px;
+  margin: auto;
+}
+.contenedor-video h3{
+  padding: 5px 10px;
+}
+.inst-perfil{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.inst-perfil img{
+  border-radius: 50%;
+  width: 100px;
+}
+
+.video-d video{
+  width: 70vw;
+  height: 60vh;
+  padding-top: 100px;
+}
+
+.cate-btn{
+  margin-top: 50px;
+  background-color: var(--verde);
+  color: black;
+}
+.cate-btn span{
+  padding: 5px;
+}

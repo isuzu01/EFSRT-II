@@ -37,7 +37,7 @@ header {
   width: 155px;
 }
 /*estilo de los item del naavbar en el header*/
-.iactivo {
+.isactivo {
   color: var(--verde);
   font-weight: 400;
 }

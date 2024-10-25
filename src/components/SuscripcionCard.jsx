@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 
-const SuscripcionCard = ({className, titulo, children, precio, openModal}) => {
+const SuscripcionCard = ({className, titulo, children, precio, onclick}) => {
 
   return(
     <div className={`card ${className}`}>
@@ -15,7 +15,7 @@ const SuscripcionCard = ({className, titulo, children, precio, openModal}) => {
       <div className="cont-card-btn">
         <p>{precio}</p>
         <Button
-          onclick={openModal}
+          onclick={onclick}
           titulo={'SUSCRIBIRSE'}
           clasname={'card-btn'}
         />

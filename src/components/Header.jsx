@@ -34,37 +34,37 @@ const Header = ({openModal}) =>{
             <NavBarItem
               url='/'
               titulo ='Inicio'
-              className={`${isActive === 'inicio' ? 'iactivo' : 'noactivo'}`}
+              className={`${isActive === 'inicio' ? 'isactivo' : 'noactivo'}`}
               onClick={() => handleClick('inicio')}
             />
             <NavBarItem
               url='/instructores'
               titulo ='instructores'
-              className={`${isActive === 'instructores' ? 'iactivo' : 'noactivo'}`}
+              className={`${isActive === 'instructores' ? 'isactivo' : 'noactivo'}`}
               onClick={() => handleClick('instructores')}
             />
             <NavBarItem
               url='/rutinas'
               titulo ='Rutinas'
-              className={`${isActive === 'rutina' ? 'iactivo' : 'noactivo'}`}
+              className={`${isActive === 'rutina' ? 'isactivo' : 'noactivo'}`}
               onClick={() => handleClick('rutina')}
             />
             <NavBarItem
               url='/suplementos'
               titulo ='Suplementos'
-              className={`${isActive === 'suplementos' ? 'iactivo' : 'noactivo'}`}
+              className={`${isActive === 'suplementos' ? 'isactivo' : 'noactivo'}`}
               onClick={() => handleClick('suplementos')}
             />
             <NavBarItem
               url='/contacto'
               titulo ='Contacto'
-              className={`${isActive === 'contacto' ? 'iactivo' : 'noactivo'}`}
+              className={`${isActive === 'contacto' ? 'isactivo' : 'noactivo'}`}
               onClick={() => handleClick('contacto')}
             />
             <NavBarItem
               url='/suscripcion'
               titulo ='Suscripción'
-              className={`${isActive === 'suscripcion' ? 'iactivo' : 'noactivo'}`}
+              className={`${isActive === 'suscripcion' ? 'isactivo' : 'noactivo'}`}
               onClick={() => handleClick('suscripcion')}
             />
              <Button

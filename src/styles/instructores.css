@@ -68,28 +68,30 @@
     font-size: 30px;
 }
 .instructor-item-1{
-    padding-top: 100px;
+    padding-top: 20px;
+    margin-top: 80px;
     filter: grayscale(100%); 
     transition: filter 0.2s ease; 
 }
 .instructor-item-2{
     filter: grayscale(100%); 
+    padding-bottom: 20px;
+
     transition: filter 0.2s ease; 
 }
 .instructor-item-3{
-    padding-top: 100px;
+    padding-top: 20px;
+    margin-top: 80px;
     filter: grayscale(100%); 
     transition: filter 0.2s ease; 
 }
 .instructor-item-4{
+    padding-bottom: 20px;
     filter: grayscale(100%); 
     transition: filter 0.2s ease; 
     cursor: pointer;
+}
 
-}
-.instructor-item-selected .instructor-img {
-    filter: grayscale(0%); /* Mantener a color cuando está seleccionada */
-}
 
 .instructor-item-1:hover {
     filter: grayscale(0%);
@@ -106,6 +108,43 @@
 .instructor-details h2{
     color: var(--rosa);
 }
+
+
+.instructor-item-1.iscolor {
+    filter: grayscale(0%); 
+    border-top: 10px solid var(--verde);
+
+}
+.instructor-item-1 .nocolor {
+    filter: grayscale(100%); 
+}
+
+.instructor-item-2.iscolor {
+    filter: grayscale(0%); 
+    border-bottom: 10px solid var(--verde);
+}
+.instructor-item-2 .nocolor {
+    filter: grayscale(100%); 
+    
+}
+.instructor-item-3.iscolor {
+    filter: grayscale(0%); 
+    border-top: 10px solid var(--verde);
+
+}
+.instructor-item-3 .nocolor {
+    filter: grayscale(100%); 
+}
+
+.instructor-item-4.iscolor {
+    filter: grayscale(0%); 
+    border-bottom: 10px solid var(--verde);
+}
+.instructor-item-4 .nocolor {
+    filter: grayscale(100%); 
+}
+
+
 .video h4{
     color: var(--verde);
     padding-top: 180px;
